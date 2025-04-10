@@ -44,24 +44,24 @@ export default async function Home() {
                 </div>
                 <div className="bg-white rounded-md p-4 w-120 h-auto outline-2 outline-gray-300">
                   <p className="text-black text-2xl font-semibold">Next.js 13 Features You Should Know</p>
-                  <p className="text-gray-500 text-lg leading-tight">A comprehensive guide to building apps with the T3 stack.</p>
+                  <p className="text-gray-500 text-lg leading-tight">Exploring the latest features in Next.js 13 that will…</p>
                   <div className="flex mt-2 gap-2 text-gray-400">
-                    <p>Posted 2 days ago</p>
+                    <p>Posted 5 days ago</p>
                     <p>•</p>
-                    <p>24 comments</p>
+                    <p>18 comments</p>
                     <p>•</p>
-                    <p>142 likes</p>
+                    <p>97 likes</p>
                   </div>
                 </div>
                 <div className="bg-white rounded-md p-4 w-120 h-auto outline-2 outline-gray-300">
-                  <p className="text-black text-2xl font-semibold">Getting Started with T3 Stack</p>
-                  <p className="text-gray-500 text-lg leading-tight">A comprehensive guide to building apps with the T3 stack.</p>
+                  <p className="text-black text-2xl font-semibold">Why tRPC Will Change Your Workflow</p>
+                  <p className="text-gray-500 text-lg leading-tight">A deep dive into tRPC and how it enhances type safety.</p>
                   <div className="flex mt-2 gap-2 text-gray-400">
-                    <p>Posted 2 days ago</p>
+                    <p>Posted 1 week ago</p>
                     <p>•</p>
-                    <p>24 comments</p>
+                    <p>32 comments</p>
                     <p>•</p>
-                    <p>142 likes</p>
+                    <p>211 likes</p>
                   </div>
                 </div>
               </div>
