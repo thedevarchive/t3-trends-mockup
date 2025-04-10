@@ -1,4 +1,5 @@
 import { api, HydrateClient } from "@/trpc/server";
+import { Sidebar } from "./_components/Sidebar";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
@@ -7,6 +8,7 @@ export default async function Home() {
 
   return (
     <HydrateClient>
+
       <div className="bg-blue-600 flex items-center justify-between p-10 text-white">
         <h1 className="text-3xl font-bold">T3 Trends</h1>
         <div className="flex justify-between gap-6 text-2xl mr-18">
@@ -16,8 +18,9 @@ export default async function Home() {
       </div>
       <main className="flex min-h-screen flex-col bg-gray-200 text-black">
         <div className="container flex flex-col items-center justify-center gap-12 mx-20 py-16">
-          <div className="bg-white rounded-lg w-200 h-auto outline outline-gray-300 py-8">
-            <div className="ml-10 space-y-8">
+          <div className="flex flex-row bg-white rounded-lg w-200 h-auto outline outline-gray-300">
+            <Sidebar />
+            <div className="ml-10 space-y-8 py-8">
               <div className="text-3xl font-bold">User Activity</div>
               <div className="flex gap-4">
                 <div className="bg-blue-600 rounded-md py-4 w-35 h-15">
