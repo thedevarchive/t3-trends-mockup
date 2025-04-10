@@ -4,6 +4,7 @@ import { Sidebar } from "./_components/Sidebar";
 import { api } from "@/trpc/react";
 
 export default function Home() {
+  //used ChatGPT to undertand why this query is throwing an undefined response 
   const { data: posts, isLoading } = api.post.getPosts.useQuery();
 
   if (isLoading) return <div>Loading...</div>;
@@ -35,6 +36,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-8">
+                {/* Used ChatGPT to understand how to modify text spacing */}
                 {posts?.map((p) => (
                   <div key={p.id} className="bg-white rounded-md p-4 w-120 h-auto outline-2 outline-gray-300">
                     <p className="text-black text-2xl font-semibold">{p.title}</p>
